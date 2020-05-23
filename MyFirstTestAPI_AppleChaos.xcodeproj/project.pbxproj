@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418235AE431DACF9D0066B26 /* Pods_MyFirstTestAPI_AppleChaos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15A321A7DA86E5AFCF3AB2D /* Pods_MyFirstTestAPI_AppleChaos.framework */; };
 		DADDBA6A2478AC8700ADDD6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADDBA692478AC8700ADDD6E /* AppDelegate.swift */; };
 		DADDBA6C2478AC8700ADDD6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADDBA6B2478AC8700ADDD6E /* SceneDelegate.swift */; };
 		DADDBA6E2478AC8700ADDD6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADDBA6D2478AC8700ADDD6E /* ViewController.swift */; };
 		DADDBA712478AC8700ADDD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADDBA6F2478AC8700ADDD6E /* Main.storyboard */; };
 		DADDBA732478AC8A00ADDD6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADDBA722478AC8A00ADDD6E /* Assets.xcassets */; };
 		DADDBA762478AC8A00ADDD6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADDBA742478AC8A00ADDD6E /* LaunchScreen.storyboard */; };
+		DADDBA812478E43A00ADDD6E /* SwiftCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = DADDBA802478E43A00ADDD6E /* SwiftCrypto */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7E804214F3AE4544048C53 /* Pods-MyFirstTestAPI_AppleChaos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstTestAPI_AppleChaos.release.xcconfig"; path = "Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos.release.xcconfig"; sourceTree = "<group>"; };
+		D770553673E85906DC1AAC8B /* Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig"; path = "Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig"; sourceTree = "<group>"; };
 		DADDBA662478AC8700ADDD6E /* MyFirstTestAPI_AppleChaos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstTestAPI_AppleChaos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADDBA692478AC8700ADDD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADDBA6B2478AC8700ADDD6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 		DADDBA722478AC8A00ADDD6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADDBA752478AC8A00ADDD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADDBA772478AC8A00ADDD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E15A321A7DA86E5AFCF3AB2D /* Pods_MyFirstTestAPI_AppleChaos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstTestAPI_AppleChaos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418235AE431DACF9D0066B26 /* Pods_MyFirstTestAPI_AppleChaos.framework in Frameworks */,
+				DADDBA812478E43A00ADDD6E /* SwiftCrypto in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA84EDEE6D3B4F64390467FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D770553673E85906DC1AAC8B /* Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig */,
+				0D7E804214F3AE4544048C53 /* Pods-MyFirstTestAPI_AppleChaos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DADDBA5D2478AC8700ADDD6E = {
 			isa = PBXGroup;
 			children = (
 				DADDBA682478AC8700ADDD6E /* MyFirstTestAPI_AppleChaos */,
 				DADDBA672478AC8700ADDD6E /* Products */,
+				BA84EDEE6D3B4F64390467FE /* Pods */,
+				FFC7AEBCF5EF3EDD3707C26C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,14 @@
 			path = MyFirstTestAPI_AppleChaos;
 			sourceTree = "<group>";
 		};
+		FFC7AEBCF5EF3EDD3707C26C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15A321A7DA86E5AFCF3AB2D /* Pods_MyFirstTestAPI_AppleChaos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +100,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DADDBA7A2478AC8A00ADDD6E /* Build configuration list for PBXNativeTarget "MyFirstTestAPI_AppleChaos" */;
 			buildPhases = (
+				D1AFFC40467EADC87DC0292C /* [CP] Check Pods Manifest.lock */,
 				DADDBA622478AC8700ADDD6E /* Sources */,
 				DADDBA632478AC8700ADDD6E /* Frameworks */,
 				DADDBA642478AC8700ADDD6E /* Resources */,
+				94EC4BFB00DD59B543450DA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MyFirstTestAPI_AppleChaos;
+			packageProductDependencies = (
+				DADDBA802478E43A00ADDD6E /* SwiftCrypto */,
+			);
 			productName = MyFirstTestAPI_AppleChaos;
 			productReference = DADDBA662478AC8700ADDD6E /* MyFirstTestAPI_AppleChaos.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +142,9 @@
 				Base,
 			);
 			mainGroup = DADDBA5D2478AC8700ADDD6E;
+			packageReferences = (
+				DADDBA7F2478E43A00ADDD6E /* XCRemoteSwiftPackageReference "SwiftCrypto" */,
+			);
 			productRefGroup = DADDBA672478AC8700ADDD6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94EC4BFB00DD59B543450DA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1AFFC40467EADC87DC0292C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFirstTestAPI_AppleChaos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DADDBA622478AC8700ADDD6E /* Sources */ = {
@@ -282,6 +358,7 @@
 		};
 		DADDBA7B2478AC8A00ADDD6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D770553673E85906DC1AAC8B /* Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +377,7 @@
 		};
 		DADDBA7C2478AC8A00ADDD6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7E804214F3AE4544048C53 /* Pods-MyFirstTestAPI_AppleChaos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DADDBA7F2478E43A00ADDD6E /* XCRemoteSwiftPackageReference "SwiftCrypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jernejstrasner/SwiftCrypto.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DADDBA802478E43A00ADDD6E /* SwiftCrypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DADDBA7F2478E43A00ADDD6E /* XCRemoteSwiftPackageReference "SwiftCrypto" */;
+			productName = SwiftCrypto;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DADDBA5E2478AC8700ADDD6E /* Project object */;
 }

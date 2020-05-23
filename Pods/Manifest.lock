@@ -1,0 +1,16 @@
+PODS:
+  - TrueTime (5.0.3)
+
+DEPENDENCIES:
+  - TrueTime (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - TrueTime
+
+SPEC CHECKSUMS:
+  TrueTime: b49551ffafb28a9dee04e51b226f42a416010842
+
+PODFILE CHECKSUM: 57209673aa0a7c45fde6a08545ee8e235bdbfe1a
+
+COCOAPODS: 1.9.2

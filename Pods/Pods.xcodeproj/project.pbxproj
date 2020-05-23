@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01DBB984897D8DCC6F767109A907B4B8 /* NTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2C92574063622686D3C95C0021D83 /* NTPClient.swift */; };
+		1C7E2059A491900E547FEEDE1B37A755 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F370DADFD68394461E719C7488E380 /* Endian.swift */; };
+		29C083C99E81F235DB0E21900A4365C5 /* NTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4CFAF892F600BBEC24324ACCEE767 /* NTPResponse.swift */; };
+		46E3D5ACE0F2BA6BD510B9E8546539E6 /* GCDLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0092C5FC0AA8B00EB0B104937E5D6C /* GCDLock.swift */; };
+		4AD02E89C41C890A689F418491A5A310 /* TrueTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740B6D6B931200A260094A9C3533982B /* TrueTime-dummy.m */; };
+		5BA51E0EF659F09FA9EB7BE2F90CACAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		80B82CE0979FC4DE6C73B343B9C04D35 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB459109A708785A0BCDD8C0F6D8E1F /* Reachability.swift */; };
+		916833E008FF65546C653B1DA2761630 /* TrueTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2735F21F0E8406A975E39F96B9228C /* TrueTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A72FE7390237F9E4A8253CB937A6A5E9 /* TimedOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74A22F059E9F6F41CE297542302A0DF /* TimedOperation.swift */; };
+		ACE71126BBFEC6009CE2CFCE604806C8 /* HostResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5513EF54381371061DD37B50940B22C4 /* HostResolver.swift */; };
+		BD1A3921A0BDED319CA7BFB4740D3EDC /* Pods-MyFirstTestAPI_AppleChaos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90695BEC38B7C5197DDEF82E3626C9B7 /* Pods-MyFirstTestAPI_AppleChaos-dummy.m */; };
+		C911A66C9E52004B8586B1B08F0443C0 /* SocketAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB20439FA9BA1DC0139C34C2647E3B9 /* SocketAddress.swift */; };
+		CAA9356C40FC3822F9E625B1C23B4C06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D3285F13AEF34950A0FC3D6C2BE00C9F /* ReferenceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBF50E03D9A03ECF4476B4D881583D /* ReferenceTime.swift */; };
+		D686EE9CC08C4CCB424F4ECCE75D8BB5 /* Pods-MyFirstTestAPI_AppleChaos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A6CFA92D4B660B61F6FF6993FB8FBEB /* Pods-MyFirstTestAPI_AppleChaos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4AF3A173973B84CA4A339988C44176E /* ntp_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 226F03FD6C87F6CB0252ADC9E39C2D1B /* ntp_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E940AAD037ABF5C9BB05DF07673E3752 /* TrueTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D445101F5789C67E2A385B7D3CD2DFE /* TrueTime.swift */; };
+		E99DA8F9DD95170BDCC180FF9B626F35 /* NTPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E59F62611B891A9C2C536A5221B299 /* NTPExtensions.swift */; };
+		EA1758FC689F9E6B2C33EEEA04D50173 /* TrueTime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3DCEB02ABC30514504D23098A1F094 /* TrueTime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F856B73E54F51BD651D5C99F947627AF /* NTPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F304AA09D18AD0E9E0848C6FE9CA2F2 /* NTPConnection.swift */; };
+		FB04B452EA1C8D4FE429A9CD46B8723C /* TrueTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AE0E33FAE11EEAA73AF6E0BA8052C0 /* TrueTime.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7959057C8EA4A85F43D4ACD5CD8ADC72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2551ED7715E6D4F807CE5B878C79AD;
+			remoteInfo = TrueTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0656A65EA56A765BDA706AFF84FDFEED /* Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig"; sourceTree = "<group>"; };
+		08ED71AB14FEE907A29C26B16517E70C /* Pods-MyFirstTestAPI_AppleChaos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyFirstTestAPI_AppleChaos.modulemap"; sourceTree = "<group>"; };
+		1E4178CD68F2C75DBDC4301A8026EFDA /* TrueTime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TrueTime-prefix.pch"; sourceTree = "<group>"; };
+		226F03FD6C87F6CB0252ADC9E39C2D1B /* ntp_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ntp_types.h; path = Sources/CTrueTime/ntp_types.h; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4DA4CFAF892F600BBEC24324ACCEE767 /* NTPResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NTPResponse.swift; path = Sources/NTPResponse.swift; sourceTree = "<group>"; };
+		5513EF54381371061DD37B50940B22C4 /* HostResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HostResolver.swift; path = Sources/HostResolver.swift; sourceTree = "<group>"; };
+		69F370DADFD68394461E719C7488E380 /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/Endian.swift; sourceTree = "<group>"; };
+		6C100CF361A9E89D1B081E20C66DA4E7 /* Pods-MyFirstTestAPI_AppleChaos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyFirstTestAPI_AppleChaos.release.xcconfig"; sourceTree = "<group>"; };
+		6D445101F5789C67E2A385B7D3CD2DFE /* TrueTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrueTime.swift; path = Sources/TrueTime.swift; sourceTree = "<group>"; };
+		700CC6F2DEEB74E4AF5D1971B4B2AB9D /* Pods-MyFirstTestAPI_AppleChaos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyFirstTestAPI_AppleChaos-Info.plist"; sourceTree = "<group>"; };
+		740B6D6B931200A260094A9C3533982B /* TrueTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TrueTime-dummy.m"; sourceTree = "<group>"; };
+		752A3977F808AFA004EB2C6E86D4FE2D /* Pods-MyFirstTestAPI_AppleChaos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyFirstTestAPI_AppleChaos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76B2C92574063622686D3C95C0021D83 /* NTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NTPClient.swift; path = Sources/NTPClient.swift; sourceTree = "<group>"; };
+		7E2735F21F0E8406A975E39F96B9228C /* TrueTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TrueTime.h; path = Sources/TrueTime.h; sourceTree = "<group>"; };
+		7F304AA09D18AD0E9E0848C6FE9CA2F2 /* NTPConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NTPConnection.swift; path = Sources/NTPConnection.swift; sourceTree = "<group>"; };
+		86EBF50E03D9A03ECF4476B4D881583D /* ReferenceTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceTime.swift; path = Sources/ReferenceTime.swift; sourceTree = "<group>"; };
+		8A6CFA92D4B660B61F6FF6993FB8FBEB /* Pods-MyFirstTestAPI_AppleChaos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyFirstTestAPI_AppleChaos-umbrella.h"; sourceTree = "<group>"; };
+		90695BEC38B7C5197DDEF82E3626C9B7 /* Pods-MyFirstTestAPI_AppleChaos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyFirstTestAPI_AppleChaos-dummy.m"; sourceTree = "<group>"; };
+		9A8C7D0DC3D66D3B79638B5F4A5EBA2E /* Pods-MyFirstTestAPI_AppleChaos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyFirstTestAPI_AppleChaos-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0092C5FC0AA8B00EB0B104937E5D6C /* GCDLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCDLock.swift; path = Sources/GCDLock.swift; sourceTree = "<group>"; };
+		A039EA824E9AF77F943C74B7B35FE3F3 /* Pods_MyFirstTestAPI_AppleChaos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyFirstTestAPI_AppleChaos.framework; path = "Pods-MyFirstTestAPI_AppleChaos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74A22F059E9F6F41CE297542302A0DF /* TimedOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimedOperation.swift; path = Sources/TimedOperation.swift; sourceTree = "<group>"; };
+		B7AE0E33FAE11EEAA73AF6E0BA8052C0 /* TrueTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TrueTime.m; path = Sources/TrueTime.m; sourceTree = "<group>"; };
+		BDB459109A708785A0BCDD8C0F6D8E1F /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		C2E59F62611B891A9C2C536A5221B299 /* NTPExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NTPExtensions.swift; path = Sources/NTPExtensions.swift; sourceTree = "<group>"; };
+		C444474ED2BF8521A74565C6123D861D /* TrueTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TrueTime.framework; path = TrueTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD5B6D6D3EFD5C30B31B8EA4BCCE041 /* TrueTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TrueTime.release.xcconfig; sourceTree = "<group>"; };
+		D67F9DABDD1969D4932146A1482BC2D8 /* Pods-MyFirstTestAPI_AppleChaos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyFirstTestAPI_AppleChaos-frameworks.sh"; sourceTree = "<group>"; };
+		E22490936FD85718A104E55D77EEC833 /* TrueTime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TrueTime.modulemap; sourceTree = "<group>"; };
+		E43077DB44840C4BAC5698B65752E07F /* TrueTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TrueTime.debug.xcconfig; sourceTree = "<group>"; };
+		E86EBCF1E9AA3302270C21B46CF3D2EB /* TrueTime-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TrueTime-Info.plist"; sourceTree = "<group>"; };
+		EDB20439FA9BA1DC0139C34C2647E3B9 /* SocketAddress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAddress.swift; path = Sources/SocketAddress.swift; sourceTree = "<group>"; };
+		FA3DCEB02ABC30514504D23098A1F094 /* TrueTime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TrueTime-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FB50E3BFF1D451B555F005D18B2ACD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA9356C40FC3822F9E625B1C23B4C06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9BEC91CCE6DEA2E4C82BA7B9FD5B0BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA51E0EF659F09FA9EB7BE2F90CACAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17A5411F3E168FD041A68E72AEAECB59 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9293B03F3F1AB865EA737C9BB7C2D38 /* Pods-MyFirstTestAPI_AppleChaos */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D4B78DEEBF57B90F74917B487ACC855 /* TrueTime */ = {
+			isa = PBXGroup;
+			children = (
+				69F370DADFD68394461E719C7488E380 /* Endian.swift */,
+				9E0092C5FC0AA8B00EB0B104937E5D6C /* GCDLock.swift */,
+				5513EF54381371061DD37B50940B22C4 /* HostResolver.swift */,
+				226F03FD6C87F6CB0252ADC9E39C2D1B /* ntp_types.h */,
+				76B2C92574063622686D3C95C0021D83 /* NTPClient.swift */,
+				7F304AA09D18AD0E9E0848C6FE9CA2F2 /* NTPConnection.swift */,
+				C2E59F62611B891A9C2C536A5221B299 /* NTPExtensions.swift */,
+				4DA4CFAF892F600BBEC24324ACCEE767 /* NTPResponse.swift */,
+				BDB459109A708785A0BCDD8C0F6D8E1F /* Reachability.swift */,
+				86EBF50E03D9A03ECF4476B4D881583D /* ReferenceTime.swift */,
+				EDB20439FA9BA1DC0139C34C2647E3B9 /* SocketAddress.swift */,
+				B74A22F059E9F6F41CE297542302A0DF /* TimedOperation.swift */,
+				7E2735F21F0E8406A975E39F96B9228C /* TrueTime.h */,
+				B7AE0E33FAE11EEAA73AF6E0BA8052C0 /* TrueTime.m */,
+				6D445101F5789C67E2A385B7D3CD2DFE /* TrueTime.swift */,
+				C5EED782EA80BA97B9C8491BBB45F8DA /* Support Files */,
+			);
+			name = TrueTime;
+			path = TrueTime;
+			sourceTree = "<group>";
+		};
+		4DBF914080F2CE713162F58F2B2B0D5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B78DEEBF57B90F74917B487ACC855 /* TrueTime */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D369A4A442E24311ECCE8C425C997A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A039EA824E9AF77F943C74B7B35FE3F3 /* Pods_MyFirstTestAPI_AppleChaos.framework */,
+				C444474ED2BF8521A74565C6123D861D /* TrueTime.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C5EED782EA80BA97B9C8491BBB45F8DA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E22490936FD85718A104E55D77EEC833 /* TrueTime.modulemap */,
+				740B6D6B931200A260094A9C3533982B /* TrueTime-dummy.m */,
+				E86EBCF1E9AA3302270C21B46CF3D2EB /* TrueTime-Info.plist */,
+				1E4178CD68F2C75DBDC4301A8026EFDA /* TrueTime-prefix.pch */,
+				FA3DCEB02ABC30514504D23098A1F094 /* TrueTime-umbrella.h */,
+				E43077DB44840C4BAC5698B65752E07F /* TrueTime.debug.xcconfig */,
+				CDD5B6D6D3EFD5C30B31B8EA4BCCE041 /* TrueTime.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TrueTime";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4DBF914080F2CE713162F58F2B2B0D5F /* Pods */,
+				6D369A4A442E24311ECCE8C425C997A3 /* Products */,
+				17A5411F3E168FD041A68E72AEAECB59 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9293B03F3F1AB865EA737C9BB7C2D38 /* Pods-MyFirstTestAPI_AppleChaos */ = {
+			isa = PBXGroup;
+			children = (
+				08ED71AB14FEE907A29C26B16517E70C /* Pods-MyFirstTestAPI_AppleChaos.modulemap */,
+				752A3977F808AFA004EB2C6E86D4FE2D /* Pods-MyFirstTestAPI_AppleChaos-acknowledgements.markdown */,
+				9A8C7D0DC3D66D3B79638B5F4A5EBA2E /* Pods-MyFirstTestAPI_AppleChaos-acknowledgements.plist */,
+				90695BEC38B7C5197DDEF82E3626C9B7 /* Pods-MyFirstTestAPI_AppleChaos-dummy.m */,
+				D67F9DABDD1969D4932146A1482BC2D8 /* Pods-MyFirstTestAPI_AppleChaos-frameworks.sh */,
+				700CC6F2DEEB74E4AF5D1971B4B2AB9D /* Pods-MyFirstTestAPI_AppleChaos-Info.plist */,
+				8A6CFA92D4B660B61F6FF6993FB8FBEB /* Pods-MyFirstTestAPI_AppleChaos-umbrella.h */,
+				0656A65EA56A765BDA706AFF84FDFEED /* Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig */,
+				6C100CF361A9E89D1B081E20C66DA4E7 /* Pods-MyFirstTestAPI_AppleChaos.release.xcconfig */,
+			);
+			name = "Pods-MyFirstTestAPI_AppleChaos";
+			path = "Target Support Files/Pods-MyFirstTestAPI_AppleChaos";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0785FB697E2FE350997303EE239ADD76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D686EE9CC08C4CCB424F4ECCE75D8BB5 /* Pods-MyFirstTestAPI_AppleChaos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1966B10FE7023B4DF4F4358F44486402 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4AF3A173973B84CA4A339988C44176E /* ntp_types.h in Headers */,
+				EA1758FC689F9E6B2C33EEEA04D50173 /* TrueTime-umbrella.h in Headers */,
+				916833E008FF65546C653B1DA2761630 /* TrueTime.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B305D25AA6D5FBB64CE96C7C985BBC5 /* Pods-MyFirstTestAPI_AppleChaos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8DEABF623B15718DF14AC833D63F36 /* Build configuration list for PBXNativeTarget "Pods-MyFirstTestAPI_AppleChaos" */;
+			buildPhases = (
+				0785FB697E2FE350997303EE239ADD76 /* Headers */,
+				BEC925CE7313BCCA2E11BEDD1EE7527A /* Sources */,
+				9FB50E3BFF1D451B555F005D18B2ACD1 /* Frameworks */,
+				85930D2F293055770C7FDFF1098F3992 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54750B5DCA3449EE7CB8FD60D055EE63 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyFirstTestAPI_AppleChaos";
+			productName = "Pods-MyFirstTestAPI_AppleChaos";
+			productReference = A039EA824E9AF77F943C74B7B35FE3F3 /* Pods_MyFirstTestAPI_AppleChaos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA2551ED7715E6D4F807CE5B878C79AD /* TrueTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA32101875CC41AE08E417DFC5055F0 /* Build configuration list for PBXNativeTarget "TrueTime" */;
+			buildPhases = (
+				1966B10FE7023B4DF4F4358F44486402 /* Headers */,
+				023C09B316578FC0713D6638D6C0A9A1 /* Sources */,
+				A9BEC91CCE6DEA2E4C82BA7B9FD5B0BF /* Frameworks */,
+				3865C09F55D88C82F39718D138C61CC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrueTime;
+			productName = TrueTime;
+			productReference = C444474ED2BF8521A74565C6123D861D /* TrueTime.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6D369A4A442E24311ECCE8C425C997A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B305D25AA6D5FBB64CE96C7C985BBC5 /* Pods-MyFirstTestAPI_AppleChaos */,
+				CA2551ED7715E6D4F807CE5B878C79AD /* TrueTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3865C09F55D88C82F39718D138C61CC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85930D2F293055770C7FDFF1098F3992 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		023C09B316578FC0713D6638D6C0A9A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7E2059A491900E547FEEDE1B37A755 /* Endian.swift in Sources */,
+				46E3D5ACE0F2BA6BD510B9E8546539E6 /* GCDLock.swift in Sources */,
+				ACE71126BBFEC6009CE2CFCE604806C8 /* HostResolver.swift in Sources */,
+				01DBB984897D8DCC6F767109A907B4B8 /* NTPClient.swift in Sources */,
+				F856B73E54F51BD651D5C99F947627AF /* NTPConnection.swift in Sources */,
+				E99DA8F9DD95170BDCC180FF9B626F35 /* NTPExtensions.swift in Sources */,
+				29C083C99E81F235DB0E21900A4365C5 /* NTPResponse.swift in Sources */,
+				80B82CE0979FC4DE6C73B343B9C04D35 /* Reachability.swift in Sources */,
+				D3285F13AEF34950A0FC3D6C2BE00C9F /* ReferenceTime.swift in Sources */,
+				C911A66C9E52004B8586B1B08F0443C0 /* SocketAddress.swift in Sources */,
+				A72FE7390237F9E4A8253CB937A6A5E9 /* TimedOperation.swift in Sources */,
+				4AD02E89C41C890A689F418491A5A310 /* TrueTime-dummy.m in Sources */,
+				FB04B452EA1C8D4FE429A9CD46B8723C /* TrueTime.m in Sources */,
+				E940AAD037ABF5C9BB05DF07673E3752 /* TrueTime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC925CE7313BCCA2E11BEDD1EE7527A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1A3921A0BDED319CA7BFB4740D3EDC /* Pods-MyFirstTestAPI_AppleChaos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54750B5DCA3449EE7CB8FD60D055EE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TrueTime;
+			target = CA2551ED7715E6D4F807CE5B878C79AD /* TrueTime */;
+			targetProxy = 7959057C8EA4A85F43D4ACD5CD8ADC72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2DF7EED1578D614E91F65D682FCC6158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C100CF361A9E89D1B081E20C66DA4E7 /* Pods-MyFirstTestAPI_AppleChaos.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3744A36F9544ABAE4849E267C27BC9B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD5B6D6D3EFD5C30B31B8EA4BCCE041 /* TrueTime.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TrueTime/TrueTime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TrueTime/TrueTime-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TrueTime/TrueTime.modulemap";
+				PRODUCT_MODULE_NAME = TrueTime;
+				PRODUCT_NAME = TrueTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D70C05E99252CFE4BCB9B623A36DC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0656A65EA56A765BDA706AFF84FDFEED /* Pods-MyFirstTestAPI_AppleChaos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyFirstTestAPI_AppleChaos/Pods-MyFirstTestAPI_AppleChaos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1E77D8404BD7C66D0A02C28B859D1B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43077DB44840C4BAC5698B65752E07F /* TrueTime.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TrueTime/TrueTime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TrueTime/TrueTime-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TrueTime/TrueTime.modulemap";
+				PRODUCT_MODULE_NAME = TrueTime;
+				PRODUCT_NAME = TrueTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A8DEABF623B15718DF14AC833D63F36 /* Build configuration list for PBXNativeTarget "Pods-MyFirstTestAPI_AppleChaos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D70C05E99252CFE4BCB9B623A36DC35 /* Debug */,
+				2DF7EED1578D614E91F65D682FCC6158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA32101875CC41AE08E417DFC5055F0 /* Build configuration list for PBXNativeTarget "TrueTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E77D8404BD7C66D0A02C28B859D1B9 /* Debug */,
+				3744A36F9544ABAE4849E267C27BC9B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

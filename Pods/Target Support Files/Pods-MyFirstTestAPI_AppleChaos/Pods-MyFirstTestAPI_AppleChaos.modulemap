@@ -1,0 +1,6 @@
+framework module Pods_MyFirstTestAPI_AppleChaos {
+  umbrella header "Pods-MyFirstTestAPI_AppleChaos-umbrella.h"
+
+  export *
+  module * { export * }
+}
